@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter number: ";
+    cin >> n;
+
+    for (int row = 1; row <= n; row++)
+    {
+        char name = 'A';
+        for (int col = 1; col <= (n-row)+1; col++)
+        {
+            cout << name << " ";
+            name++;
+        }
+        cout << endl;
+    }
+    return 0;
+}
